@@ -31,7 +31,8 @@
 
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    {% comment %}<script src="{{ 'global.js' | asset_url }}" defer="defer"></script>{% endcomment %}
+    <script src="{{ 'theme-scripts.min.js' | asset_url }}" defer="defer"></script>
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" id="AnimationsScript" defer="defer"></script>
     {%- endif -%}
@@ -222,7 +223,9 @@
       }
     {% endstyle %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {% comment %}{{ 'base.css' | asset_url | stylesheet_tag }}{% endcomment %}
+    {{ 'theme-css-components.min.css' | asset_url | stylesheet_tag }}
+    {{ 'theme.min.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
