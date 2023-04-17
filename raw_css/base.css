@@ -652,7 +652,7 @@ h6:empty {
   display: inline-block;
   border: none;
   box-shadow: none;
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 0.3rem;
   color: rgb(var(--color-link));
   background-color: transparent;
@@ -2425,8 +2425,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
   }
 
   .header--middle-left {
-    grid-template-areas: 'heading navigation icons';
-    grid-template-columns: auto auto 1fr;
+    grid-template-areas: 'heading search contact icons';
+    grid-template-columns: auto 4fr 3fr auto;
     column-gap: 2rem;
   }
 
@@ -2542,7 +2542,28 @@ product-info .loading-overlay:not(.hidden) ~ *,
     text-align: center;
   }
 }
-
+/* Header search */
+.header-search
+{  grid-area: search;}
+/* Header contact */
+.header-info
+{  grid-area: contact;}
+.store-locator
+{
+  text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFF;
+}
+.header-contact {
+  display: flex;
+    column-gap: 10px;
+}
+.header-contact-text {
+  font-size: 12px;
+    color: #FFF;
+}
+.header-contact-text div:nth-child(2){ font-size: 11px; line-height: 10px; font-weight: 100; }
 /* Header icons */
 .header__icons {
   display: flex;
@@ -2567,9 +2588,19 @@ product-info .loading-overlay:not(.hidden) ~ *,
   color: rgb(var(--color-foreground));
 }
 
-.header__icon span {
+.header__icon span  {
   height: 100%;
+  padding: 0 10px;
+  text-decoration: none;
+  color:#FFF;
+
 }
+
+a.header__icon span:link,
+a.header__icon span:active,
+a.header__icon span:visited  {text-decoration: none;}
+
+
 
 .header__icon::after {
   content: none;
@@ -2589,8 +2620,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .header__icon,
 .header__icon--cart .icon {
-  height: 4.4rem;
-  width: 4.4rem;
+  /* height: 4.4rem;
+  width: 4.4rem; */
   padding: 0;
 }
 

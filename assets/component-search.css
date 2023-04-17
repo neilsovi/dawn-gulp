@@ -1,5 +1,7 @@
+#predictive-search-results { background: #FFF; }
 .search__input.field__input {
   padding-right: 9.8rem;
+  background: #FFF;
 }
 
 .search__button {

@@ -1,3 +1,21 @@
+.list-menu .list-menu__item {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.list-menu li:last-child .list-menu__item {
+  background: #FFE500;
+  color: #194681;
+}
+
+.list-menu .header__menu-item {
+  padding:6px 20px;
+}
+
+
+/* Original */
 .list-menu--right {
   right: 0;
 }
