@@ -1,0 +1,340 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<image-slider>
+   <div class="hero-img section-{{ section.id }}-padding" >
+      <div class="img-slider {% if section.settings.full_width==false %}page-width{% endif %}">
+         {% for block in section.blocks %}
+         {% case block.type %}
+         {% when 'slider' %}
+         <div class="hero-img__wrapper"  style="background: url({{ block.settings.image | image_url:width:1440 }}) no-repeat; background-size: cover;">
+            <div class="{% if section.settings.full_width %}page-width{% endif %}">
+
+               <div class="hero-img-wrapper">
+               <div class="brand-image">
+               <img src="{{ block.settings.brand-image | image_url:width:960 }}">
+               </div>
+                {% if block.settings.heading!=blank %}
+                  <div class="hero-img-heading">
+                     <h3>{{ block.settings.heading }}</h3>
+                  </div>
+                {% endif %}
+                {% if block.settings.subHeading!=blank %}
+                  <div class="hero-img-sub-heading">
+                     {{ block.settings.subHeading }}
+                  </div>
+                {% endif %}
+                  <div class="button-group">
+                    {% if block.settings.button_label != blank and block.settings.button_link != blank %}                   
+                        <a href="{{ block.settings.button_link }}" class="homepage-featured-box-btn">
+                        {{ block.settings.button_label | escape }}
+                        </a>
+                     {% endif %}
+                     {% if block.settings.button2_label != blank and block.settings.button2_link != blank %}
+                        <a href="{{ block.settings.button2_link }}" class="homepage-featured-box-btn">
+                        {{ block.settings.button2_label | escape }}
+                        </a>
+                     {% endif %}
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         {% when 'video' %}
+         <div class="videoBox" style="{%- if block.settings.video_link == blank -%}background-image: url('{{ block.settings.video_image  | img_url: 'master' }}');{%- endif -%}">
+            {%- if block.settings.video_link != blank -%}
+            <div class="fullscreen-video-wrap">
+               <video class="video-js" loop autoplay preload="none" muted playsinline
+                  poster="https:{{ block.settings.video_image | img_url: 'master' }}">
+                  <source src="{{ block.settings.video_link }}" type="video/mp4">
+               </video>
+               {%- if block.settings.heading != blank -%}
+               <div class="hero-img-wrapper">
+                  <div class="hero-img-heading">
+                     <h3>{{ block.settings.heading }}</h3>
+                  </div>
+                  <div class="hero-img-sub-heading">
+                     {{ block.settings.subHeading }}
+                  </div>
+                  <div class="button-group">                        
+                     <a href="{{ block.settings.button_link }}" class="homepage-featured-box-btn">
+                     {{ block.settings.button_label | escape }}
+                     </a>
+                     {% if block.settings.button2_label != blank and block.settings.button2_link != blank %}
+                     <a href="{{ block.settings.button2_link }}" class="homepage-featured-box-btn">
+                     {{ block.settings.button2_label | escape }}
+                     </a>
+                     {% endif %}
+                  </div>
+               </div>
+               {% endif %}
+            </div>
+            {% endif %}
+         </div>
+         {% endcase %}
+         {% endfor %}
+      </div>
+      <div class="img-slider--mobile {% if section.settings.full_width==false %}page-width{% endif %}">
+         {% for block in section.blocks %}
+         {% case block.type %}
+         {% when 'slider' %}
+         <div class="hero-img__wrapper--mobile" style="background: url({{ block.settings.mobileImage | image_url:width:340 }}) no-repeat; background-size: cover;">
+            <div class="hero-img-wrapper">
+               <div class="hero-img-heading">
+                  <h3>{{ block.settings.heading }}</h3>
+               </div>
+               <div class="hero-img-sub-heading">
+                  {{ block.settings.subHeading }}
+               </div>
+               <div class="button-group">                        
+                  <a href="{{ block.settings.button_link }}" class="homepage-featured-box-btn">
+                  {{ block.settings.button_label | escape }}
+                  </a>
+                  {% if block.settings.button2_label != blank and block.settings.button2_link != blank %}
+                  <a href="{{ block.settings.button2_link }}" class="homepage-featured-box-btn">
+                  {{ block.settings.button2_label | escape }}
+                  </a>
+                  {% endif %}
+               </div>
+            </div>
+         </div>
+         {% when 'video' %}
+         <div class="videoBox" style="{%- if block.settings.video_link == blank -%}background-image: url('{{ block.settings.video_image  | img_url: 'master' }}');{%- endif -%}">
+            {%- if block.settings.video_link != blank -%}
+            <div class="fullscreen-video-wrap">
+               <video class="video-js" loop autoplay preload="none" muted playsinline
+                  poster="https:{{ block.settings.video_image | img_url: 'master' }}">
+                  <source src="{{ block.settings.video_link }}" type="video/mp4">
+               </video>
+               {%- if block.settings.heading != blank -%}
+               <div class="hero-img-wrapper">
+                  <div class="hero-img-heading">
+                     <h3>{{ block.settings.heading }}</h3>
+                  </div>
+                  <div class="hero-img-sub-heading">
+                     {{ block.settings.subHeading }}
+                  </div>
+                  <div class="button-group">                        
+                     <a href="{{ block.settings.button_link }}" class="homepage-featured-box-btn">
+                     {{ block.settings.button_label | escape }}
+                     </a>
+                     {% if block.settings.button2_label != blank and block.settings.button2_link != blank %}
+                     <a href="{{ block.settings.button2_link }}" class="homepage-featured-box-btn">
+                     {{ block.settings.button2_label | escape }}
+                     </a>
+                     {% endif %}
+                  </div>
+               </div>
+               {% endif %}
+            </div>
+            {% endif %}
+         </div>
+         {% endcase %}
+         {% endfor %}
+      </div>
+   </div>
+</image-slider>
+
+
+{% schema %}
+{
+   "name":"Hero Image",
+   "settings":[
+      {
+         "type":"checkbox",
+         "id":"full_width",
+         "label":"Full Width Slider",
+         "default":false
+      },
+      {
+         "type":"range",
+         "id":"padding_top",
+         "min":0,
+         "max":180,
+         "step":10,
+         "unit":"px",
+         "label":"Padding Top",
+         "default":180
+      },
+      {
+         "type":"range",
+         "id":"padding_bottom",
+         "min":0,
+         "max":180,
+         "step":10,
+         "unit":"px",
+         "label":"Padding Bottom",
+         "default":0
+      }
+   ],
+   "blocks":[
+      {
+         "type":"slider",
+         "name":"Slider",
+         "limit":2,
+         "settings":[
+            {
+            "type":"image_picker",
+            "label":"Brand Iamge",
+            "id":"brand-image",
+            "info":"Recommended size: 960 by 540px"
+            },
+            {
+               "type":"richtext",
+               "id":"heading",
+               "label":"Section Heading"
+            },
+            {
+               "type":"color",
+               "id":"heading-color",
+               "label":"Heading Color"
+            },
+            {
+               "type":"text",
+               "id":"subHeading",
+               "label":"Section Sub Heading"
+            },
+            {
+               "type":"image_picker",
+               "label":"Background Iamge",
+               "id":"image",
+               "info":"Recommended size: 1440 by 699px"
+            },
+            {
+               "type":"image_picker",
+               "label":"Mobile Background Image",
+               "id":"mobileImage",
+               "info":"Recommended size: 340 by 533px"
+            },
+            {
+               "type":"text",
+               "id":"button_label",
+               "label":"Button text"
+            },
+            {
+               "type":"url",
+               "id":"button_link",
+               "label":"Button link"
+            },
+            {
+               "type":"text",
+               "id":"button2_label",
+               "label":{
+                  "en":"Button2 text",
+                  "de":"Buttontext",
+                  "es":"Texto del botón",
+                  "fr":"Texte des boutons",
+                  "pt-PT":"Texto do botão"
+               }
+            },
+            {
+               "type":"url",
+               "id":"button2_link",
+               "label":{
+                  "en":"Button 2 link",
+                  "de":"Dialink",
+                  "es":"Enlace de la diapositiva",
+                  "fr":"Lien coulissant",
+                  "pt-PT":"Ligação do diapositivo"
+               }
+            }
+         ]
+      },
+            {
+         "type":"video",
+         "name":"Video",
+         "settings":[
+            {
+               "type":"url",
+               "id":"video_link",
+               "label":{
+                  "en":"Video link"
+               }
+            },
+                        {
+               "type":"image_picker",
+               "id":"video_image",
+               "label":{
+                  "en":"Cover image"
+               }
+            },
+            {
+               "type":"richtext",
+               "id":"heading",
+               "label":"Section Heading"
+            },
+            {
+               "type":"color",
+               "id":"heading-color",
+               "label":"Heading Color"
+            },
+            {
+               "type":"text",
+               "id":"subHeading",
+               "label":"Section Sub Heading"
+            },
+            {
+               "type":"image_picker",
+               "label":"Background Iamge",
+               "id":"image",
+               "info":"Recommended size: 1440 by 699px"
+            },
+            {
+               "type":"image_picker",
+               "label":"Mobile Background Image",
+               "id":"mobileImage",
+               "info":"Recommended size: 340 by 533px"
+            },
+            {
+               "type":"text",
+               "id":"button_label",
+               "label":"Button text"
+            },
+            {
+               "type":"url",
+               "id":"button_link",
+               "label":"Button link"
+            },
+            {
+               "type":"text",
+               "id":"button2_label",
+               "label":{
+                  "en":"Button2 text",
+                  "de":"Buttontext",
+                  "es":"Texto del botón",
+                  "fr":"Texte des boutons",
+                  "pt-PT":"Texto do botão"
+               }
+            },
+            {
+               "type":"url",
+               "id":"button2_link",
+               "label":{
+                  "en":"Button 2 link",
+                  "de":"Dialink",
+                  "es":"Enlace de la diapositiva",
+                  "fr":"Lien coulissant",
+                  "pt-PT":"Ligação do diapositivo"
+               }
+            }
+            ]
+            }
+   ],
+   "presets":[
+      {
+         "name":"Hero Image",
+         "category":"ADVANCED LAYOUT"
+      }
+   ]
+}
+{% endschema %}
