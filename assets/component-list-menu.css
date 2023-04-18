@@ -5,6 +5,21 @@
   text-transform: uppercase;
 }
 
+nav.header__inline-menu {
+  position: relative;
+}
+
+.list-menu li:last-child {
+  position: absolute;
+  right: 0;
+}
+
+.list-menu li a.list-menu__item:hover { 
+  background: #FFE500;
+  color: #194681;
+  text-decoration: none;
+}
+
 .list-menu li:last-child .list-menu__item {
   background: #FFE500;
   color: #194681;
