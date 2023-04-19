@@ -153,16 +153,6 @@
             "block_heading": "Weightlifting",
             "image_link": "#"
           }
-        },
-        "67b3ef9d-a34d-4013-8878-2c31d002140e": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/c-3.jpg",
-            "heading": "",
-            "caption": "",
-            "block_heading": "Kettlebells",
-            "image_link": ""
-          }
         }
       },
       "block_order": [
@@ -170,8 +160,7 @@
         "d630c9bc-686f-4cfd-a866-6541723cb3c2",
         "d9ff411f-70ed-498a-b019-9f11affd434d",
         "64f01a08-8d6f-4d91-8a75-b2ec239bd343",
-        "0bde5c24-8e6e-4f4e-bfb7-e26fe44869eb",
-        "67b3ef9d-a34d-4013-8878-2c31d002140e"
+        "0bde5c24-8e6e-4f4e-bfb7-e26fe44869eb"
       ],
       "settings": {
         "heading": "Popular Categories",
