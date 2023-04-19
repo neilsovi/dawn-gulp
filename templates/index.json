@@ -372,6 +372,12 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "1681928564ac3f78e9": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -381,6 +387,7 @@
     "f8df3d99-d04b-4507-98fc-ea497f20f6bf",
     "4f83615f-63ef-41de-8532-1a7425a19de9",
     "ccaa105b-ee72-40f1-b2a7-3a6615b145b9",
-    "0e983d99-de72-48e9-af62-4e681c691755"
+    "0e983d99-de72-48e9-af62-4e681c691755",
+    "1681928564ac3f78e9"
   ]
 }

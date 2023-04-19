@@ -2,6 +2,54 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "d2ff0644-2835-4065-a455-388f6f183c5f": {
+      "type": "three-column-icon",
+      "blocks": {
+        "28e570c3-fe00-4345-915d-7f78a75f8a65": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/i-1.png",
+            "icon": "",
+            "heading": "Clearance",
+            "caption": "Check out our Clearance section to find products at a sale or reduced price",
+            "cta": "Shop Now",
+            "cta_link": "shopify:\/\/collections\/clearance"
+          }
+        },
+        "f3871821-2d93-46a6-b65e-11c951728cea": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/i-2.png",
+            "icon": "",
+            "heading": "TF Gift Cards",
+            "caption": "The Treadmill Factory Gift Cards are a perfect gift for any fitness lover.",
+            "cta": "Shop TF Gift Cards",
+            "cta_link": "shopify:\/\/products\/treadmill-factory-gift-card"
+          }
+        },
+        "12ce7a1d-d06a-494d-9019-5fded9542462": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/i-3.png",
+            "icon": "",
+            "heading": "Contact Us",
+            "caption": "How can we help?",
+            "cta": "Contact Us",
+            "cta_link": "shopify:\/\/pages\/service-department"
+          }
+        }
+      },
+      "block_order": [
+        "28e570c3-fe00-4345-915d-7f78a75f8a65",
+        "f3871821-2d93-46a6-b65e-11c951728cea",
+        "12ce7a1d-d06a-494d-9019-5fded9542462"
+      ],
+      "settings": {
+        "heading": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -64,6 +112,7 @@
     }
   },
   "order": [
+    "d2ff0644-2835-4065-a455-388f6f183c5f",
     "footer"
   ]
 }
