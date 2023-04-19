@@ -1,6 +1,7 @@
 .footer__blocks-wrapper.menu-list {
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  grid-row-gap: 20px;
 }
 
 
@@ -17,6 +18,7 @@
   padding-bottom: 5rem;
   display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 20px;
 }
 
 @media screen and (max-width: 749px) {
@@ -156,6 +158,11 @@
   margin-top: 0;
   font-size: calc(var(--font-heading-scale) * 1.6rem);
   color: #FFF;
+}
+
+.footer-block__heading.rte {
+  font-size: 14px;
+    line-height: 20px;
 }
 
 @media screen and (min-width: 990px) {
@@ -433,6 +440,12 @@
 
 .footer-block__brand-info {
   text-align: left;
+}
+
+.footer-block__brand-info .rte p,
+.footer-block__brand-info .rte p a{
+  color:#FFF;
+  font-size: 14px;
 }
 
 .footer-block:only-child .footer-block__brand-info {

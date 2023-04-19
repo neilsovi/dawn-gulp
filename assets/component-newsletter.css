@@ -15,12 +15,17 @@
   }
 }
 
+.newsletter-form__field-wrapper .field__label {
+  color: #999;
+}
+
 .newsletter-form__field-wrapper {
   width: 100%;
 }
 
 .newsletter-form__field-wrapper .field__input {
   padding-right: 5rem;
+  background: #FFF;
 }
 
 .newsletter-form__field-wrapper .field {
@@ -63,7 +68,7 @@
 
 .newsletter-form__button:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
-  background-color: inherit;
+  background-color: #FFF200;
 }
 
 .newsletter-form__button .icon {
