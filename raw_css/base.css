@@ -668,6 +668,7 @@ h6:empty {
 
 .link--text:hover {
   color: rgba(var(--color-foreground), 0.75);
+  text-decoration: none;
 }
 
 .link-with-icon {
@@ -2863,7 +2864,6 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover span {
-  text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
 
