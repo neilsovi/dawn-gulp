@@ -1,0 +1,193 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<location-carousel>
+<div class="loc-caro page-width section-{{ section.id }}-padding">
+   <div class="loc-caro__title">
+      <h2 class="title">{{ section.settings.heading }}</h2>
+   </div>
+   <div class="loc-caro__caption">{{ section.settings.caption }}</div>
+   {%- if section.settings.button_label != blank -%}
+   <div class="collection__link"><a class="button button--primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label}}</a></div>
+   {% endif %}
+   <div class="loc-caro__caro-container">
+      {% for block in section.blocks %}
+      {% case block.type %}
+      {% when 'location' %}
+      <div class="loc-caro__img">
+         <a href="{{ block.settings.image_link }}">
+         <img src="{{ block.settings.image | image_url:width:310 }}" >
+         </a>
+         <div class="text-wrapper">
+            <div class="location">{{ block.settings.location }}</div>
+            <div class="address">
+            {{ block.settings.address}}<br>
+            {{ block.settings.city}},{{ block.settings.province}}<br>
+            {{ block.settings.postal}}
+            </div>
+            <a href="tel:{{ block.settings.phone}}" class="phone"> <i class="fa fa-phone" aria-hidden="true"></i>{{ block.settings.phone}}</a>
+            <a href="mailto:{{ block.settings.email}}" class="email"> <i class="fa fa-envelope" aria-hidden="true"></i>{{ block.settings.email}}</a>
+         </div>
+
+         <div class="hours">{{ block.settings.hours}}</div>
+      </div>
+      
+      {% endcase %}
+      {% endfor %}
+   </div>
+</div>
+</location-carousel>
+
+{% schema %}
+{
+  "name": "Location Carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Heading",
+      "label": "Section Heading"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "default": "Caption",
+      "label": "Section Caption"
+    },
+    {
+         "type":"text",
+         "id":"button_label",
+         "label":"Button text"
+    },
+    {
+         "type":"url",
+         "id":"button_link",
+         "label":"Button link"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 180
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "location",
+      "name": "Location Carousel",
+      "limit": 8,
+      "settings": [
+               {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Carousel Image",
+          "info":"Recommended size: 385 by 310px"
+        },
+        {
+            "type":"url",
+            "id":"image_link",
+            "label":"Image Link"
+         },
+                    {
+               "type":"text",
+               "label":"Location",
+               "id":"location"
+            },
+            {
+               "type":"text",
+               "label":"Address",
+               "id":"address"
+            },
+                        {
+               "type":"text",
+               "label":"City",
+               "id":"city"
+            },
+                                    {
+               "type":"text",
+               "label":"Province",
+               "id":"province"
+            },
+            {
+               "type":"text",
+               "label":"Postal Code",
+               "id":"postal"
+            },
+            {
+              "type":"text",
+               "label":"Phone",
+               "id":"phone"
+            },
+                        {
+              "type":"text",
+               "label":"Email",
+               "id":"email"
+            },
+{
+  "type": "richtext",
+  "id": "hours",
+  "label": "Hours"
+}
+                 
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Location Carousel",
+      "category": "ADVANCED LAYOUT"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+.loc-caro__img {margin:0 10px;}
+.location {
+        font-weight: 600;
+    padding: 10px;
+    letter-spacing: 0;
+}
+.address, .hours {
+        padding: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #999;
+}
+.phone, .email {
+    display:block;
+    font-size: 14px;
+}
+.email {    color:#0069AA;}
+.phone {color:#999;}
+.phone i {
+    color: #0069AA;}
+    .email i, .phone i {
+        padding:5px;
+    }
+</style>

@@ -1,0 +1,134 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<image-carousel>
+<div class="img-caro page-width section-{{ section.id }}-padding">
+   <div class="img-caro__title">
+      <h2 class="title">{{ section.settings.heading }}</h2>
+   </div>
+   <div class="img-caro__caption">{{ section.settings.caption }}</div>
+   {%- if section.settings.button_label != blank -%}
+   <div class="collection__link"><a class="button button--primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label}}</a></div>
+   {% endif %}
+   <div class="img-caro__caro-container">
+      {% for block in section.blocks %}
+      {% case block.type %}
+      {% when 'image' %}
+      <div class="img-caro__img">
+         <a href="{{ block.settings.image_link }}">
+         <img src="{{ block.settings.image | image_url:width:310 }}" >
+         <div class="text-wrapper">
+            <div class="image-heading">{{ block.settings.heading }}</div>
+            <div class="image-caption">{{ block.settings.caption}}</div>
+         </div>
+         </a>
+         <div class="block_heading">{{ block.settings.block_heading}}</div>
+      </div>
+      
+      {% endcase %}
+      {% endfor %}
+   </div>
+</div>
+</image-carousel>
+
+{% schema %}
+{
+  "name": "Image Carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Heading",
+      "label": "Section Heading"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "default": "Caption",
+      "label": "Section Caption"
+    },
+    {
+         "type":"text",
+         "id":"button_label",
+         "label":"Button text"
+    },
+    {
+         "type":"url",
+         "id":"button_link",
+         "label":"Button link"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 180
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Carousel Image",
+      "limit": 8,
+      "settings": [
+               {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Carousel Image",
+          "info":"Recommended size: 385 by 310px"
+        },
+                    {
+               "type":"text",
+               "label":"Image Heading",
+               "id":"heading"
+            },
+            {
+               "type":"text",
+               "label":"Image Caption",
+               "id":"caption"
+            },
+                                {
+               "type":"text",
+               "label":"Block Heading",
+               "id":"block_heading"
+            },
+                 {
+            "type":"url",
+            "id":"image_link",
+            "label":"Image Link"
+         }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Carousel",
+      "category": "ADVANCED LAYOUT"
+    }
+  ]
+}
+{% endschema %}

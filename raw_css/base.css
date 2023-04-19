@@ -1012,14 +1012,6 @@ summary::-webkit-details-marker {
   flex-shrink: 0;
 }
 
-.title-wrapper--no-top-margin {
-  margin-top: 0;
-}
-
-.title-wrapper--no-top-margin > .title {
-  margin-top: 0;
-}
-
 .subtitle {
   font-size: 1.8rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
@@ -3424,31 +3416,21 @@ details-disclosure > details {
  display: block;
 }
 
-.img-slider .slick-prev,
-.img-slider--mobile .slick-prev {
- left: 0;
-}
-
 .img-slider--mobile .slick-prev,
 .img-slider--mobile .slick-next {
  top: unset;
  bottom: -23.5px;
 }
 
-.img-slider .slick-next,
-.img-slider--mobile .slick-next {
- right: 0;
-}
-
-  .hero-img .slick-next:before, .hero-img .slick-prev:before{
+.slick-next:before, .hero-img .slick-prev:before{
      display:none;
   }
 
-.hero-img .slick-next{right: 50px;}
-.hero-img .slick-prev{left: 50px;}
+.slick-next{right: 0;}
+.slick-prev{left: 0;}
 
-.hero-img .slick-next,
-.hero-img .slick-prev {
+.slick-next,
+.slick-prev {
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -3461,6 +3443,10 @@ details-disclosure > details {
     justify-content: center;
     align-items: center;
 }
+
+.loc-caro .slick-next,
+.loc-caro .slick-prev {
+    top: 20%;}
 
   .fullscreen-video-wrap {
 
@@ -3506,6 +3492,53 @@ details-disclosure > details {
 }
 
 
+/* Image Carousel */
+
+.img-caro .block_heading {
+  font-size: 10px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+.img-caro .rich-text__buttons{
+  max-width: none;
+}
+.img-caro .collection__link {
+    text-align: center;
+  padding-top: 30px;
+  padding-bottom: 48px;
+}
+
+.img-caro .collection__link .button {
+  text-transform: uppercase;
+}
+
+.img-caro__caption{
+   width: 100%;
+   margin: auto;
+   text-align: center;
+}
+.img-caro__title{
+   text-align: center;
+}
+
+.img-caro .slick-list {padding-bottom:30px!important;}
+
+.img-caro__img img{
+  width:100%;
+}
+
+.img-caro .slick-slide {
+    margin: 0 10px;
+}
+
+@media screen and (min-width: 992px){
+ .img-caro__caption{
+   width: 60%;
+}
+}
+
+
 /* Homepage */
 
 .featured-collection .price {
@@ -3545,6 +3578,14 @@ details-disclosure > details {
   padding: 0;
 }
 
-.featured-collection h2.title {
+/* Section Title */
+h2.title {
   border-bottom: 1px solid #555;
+  text-align: left;
+}
+
+.slick-slide img
+{
+    display: block;
+    width:100%;
 }

@@ -1,0 +1,158 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="tc-img section-{{ section.id }}-padding">
+<div class="wrapper page-width">
+    <div class="tc-img-heading">
+    <h3>{{ section.settings.heading }}</h3>
+    </div>
+    
+    <div class="tc-img-subheading">
+    <h6>{{ section.settings.sub_heading }}</h6>
+    </div>
+    
+   <div>
+      <div class="img-wrapper">
+         {% for block in section.blocks %}
+         {% case block.type %}
+         {% when 'image' %}
+            <div class="tc-img__item">
+            {% if block.settings.image_link != blank %}
+            <a href="{{ block.settings.image_link }}">
+            {% endif %}
+                <img class="tc-img__item-img" src="{{ block.settings.ig_image | image_url:width:540       }}">
+            {% if block.settings.image_link != blank %}
+            </a>
+            {% endif %}
+            </div>
+         {% endcase %}
+         {% endfor %}
+      </div>
+</div>
+
+{% schema %}
+{
+   "name":"3 Column with Image",
+   "max_blocks":8,
+   "settings":[
+      {
+         "type":"text",
+         "id":"heading",
+         "label":"Section Heading"
+      },
+      {
+         "type":"text",
+         "id":"sub_heading",
+         "label":"Section Sub Heading"
+      },
+      {
+         "type":"range",
+         "id":"padding_top",
+         "min":0,
+         "max":180,
+         "step":10,
+         "unit":"px",
+         "label":"Padding Top",
+         "default":60
+      },
+      {
+         "type":"range",
+         "id":"padding_bottom",
+         "min":0,
+         "max":180,
+         "step":10,
+         "unit":"px",
+         "label":"Padding Bottom",
+         "default":60
+      }
+   ],
+   "blocks":[
+      {
+         "type":"image",
+         "name":"Image",
+         "settings":[
+            {
+               "type":"image_picker",
+               "label":"Iamge",
+               "id":"ig_image",
+               "info":"Recommended size: 540 by 650px"
+            },
+            {
+            "type":"url",
+            "id":"image_link",
+            "label":"Image Link"
+         }
+         ]
+      }
+   ],
+   "presets":[
+      {
+         "name":"3 Column with Image",
+         "category":"ADVANCED LAYOUT"
+      }
+   ]
+}
+{% endschema %}
+
+<style>
+ .tc-img-heading h3 {
+     text-align: center;
+}
+ .tc-img-subheading h6{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-bottom:35px;
+    
+}
+
+ .tc-img .three-colum-item{
+     display: flex;
+     align-items: center;
+     background-color: rgb(var(--color-red));
+}
+
+.tc-img .img-wrapper{
+   display: grid;
+grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    justify-content: unset;
+    transform: scale(1);
+}
+.tc-img .tc-img__item .tc-img__item-img {
+   width:100%;
+   height:100%;
+}
+.tc-img .tc-img__item:nth-child(n+5)
+{
+display:none;
+}
+ @media (min-width: 992px) {
+     .tc-img-container {
+     gap: 20px;
+     padding-top: 80px;
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         position: relative;
+         z-index: 1;
+    }
+    .tc-img .tc-img__item:nth-child(n+5){display:block;}
+    .tc-img .img-wrapper{
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    gap: 16px;
+}
+}
+ 
+</style>

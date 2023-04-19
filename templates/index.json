@@ -70,118 +70,328 @@
         "padding_bottom": 36
       }
     },
-    "collage": {
-      "type": "collage",
+    "11735775-5187-48cd-8650-6bdb516123cf": {
+      "type": "two-column-image",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "ad175648-be48-4213-b87c-cfc6d648cf21": {
+          "type": "image",
           "settings": {
-            "collection": ""
+            "block_heading": "New Brand",
+            "image": "shopify:\/\/shop_images\/AI_Image2.jpg",
+            "image_link": "#"
           }
         },
-        "product": {
-          "type": "product",
+        "a5bfcef3-9956-4b87-b0c7-de66c375d3d9": {
+          "type": "image",
           "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
+            "block_heading": "New Product",
+            "image": "shopify:\/\/shop_images\/AI_Image.jpg",
+            "image_link": "#"
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
+        "ad175648-be48-4213-b87c-cfc6d648cf21",
+        "a5bfcef3-9956-4b87-b0c7-de66c375d3d9"
       ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
       "settings": {
         "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "sub_heading": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "f8df3d99-d04b-4507-98fc-ea497f20f6bf": {
+      "type": "image-carousel",
       "blocks": {
-        "column1": {
-          "type": "column",
+        "5209212b-cbad-4a93-880a-daee937b97d6": {
+          "type": "image",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/c-1.jpg",
+            "heading": "",
+            "caption": "",
+            "block_heading": "Rigs and Racks",
+            "image_link": "#"
           }
         },
-        "column2": {
-          "type": "column",
+        "d630c9bc-686f-4cfd-a866-6541723cb3c2": {
+          "type": "image",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/c-2_e25ba61b-10ed-43a3-83f8-91e9d09e2b20.jpg",
+            "heading": "",
+            "caption": "",
+            "block_heading": "Dumbbells",
+            "image_link": "#"
           }
         },
-        "column3": {
-          "type": "column",
+        "d9ff411f-70ed-498a-b019-9f11affd434d": {
+          "type": "image",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/c-3.jpg",
+            "heading": "",
+            "caption": "",
+            "block_heading": "Kettlebells",
+            "image_link": "#"
+          }
+        },
+        "64f01a08-8d6f-4d91-8a75-b2ec239bd343": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/c-4.jpg",
+            "heading": "",
+            "caption": "",
+            "block_heading": "Benches",
+            "image_link": "#"
+          }
+        },
+        "0bde5c24-8e6e-4f4e-bfb7-e26fe44869eb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/c-5.jpg",
+            "heading": "",
+            "caption": "",
+            "block_heading": "Weightlifting",
+            "image_link": "#"
+          }
+        },
+        "67b3ef9d-a34d-4013-8878-2c31d002140e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/c-3.jpg",
+            "heading": "",
+            "caption": "",
+            "block_heading": "Kettlebells",
+            "image_link": ""
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "5209212b-cbad-4a93-880a-daee937b97d6",
+        "d630c9bc-686f-4cfd-a866-6541723cb3c2",
+        "d9ff411f-70ed-498a-b019-9f11affd434d",
+        "64f01a08-8d6f-4d91-8a75-b2ec239bd343",
+        "0bde5c24-8e6e-4f4e-bfb7-e26fe44869eb",
+        "67b3ef9d-a34d-4013-8878-2c31d002140e"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
+        "heading": "Popular Categories",
+        "caption": "",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "4f83615f-63ef-41de-8532-1a7425a19de9": {
+      "type": "image-carousel",
+      "blocks": {
+        "adc9fd36-11c5-40b8-909a-3dcbfa7ce113": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xm-wordmark-logo-2020_1_45c6fb95-7090-4691-868e-7dd33e1686ca.png",
+            "heading": "",
+            "caption": "",
+            "block_heading": "",
+            "image_link": ""
+          }
+        },
+        "319b0f94-1f8e-4059-a6dc-a1e4a52285a1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ironax-logo-online_271d84b9-7e24-445f-942a-2f4966aeb543.png",
+            "heading": "",
+            "caption": "",
+            "block_heading": "",
+            "image_link": ""
+          }
+        },
+        "3ec603ad-cce2-4c7d-bc08-40a90b3935a9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elementfitness_Logo_40772b34-0bdc-4836-b8f4-47bc04235642.png",
+            "heading": "",
+            "caption": "",
+            "block_heading": "",
+            "image_link": ""
+          }
+        },
+        "1305abec-b7fd-419c-83ee-e269abf7daf7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trx_logo_fcb7f66d-49bb-4b0f-a428-e801a7a7555f.png",
+            "heading": "",
+            "caption": "",
+            "block_heading": "",
+            "image_link": ""
+          }
+        },
+        "ecdb4159-9238-4889-9afa-1646a9ee3b05": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bodycraft_logo_New2014_1_-01_0c5aac21-7355-41a9-aa63-ad254788260b.png",
+            "heading": "",
+            "caption": "",
+            "block_heading": "",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "adc9fd36-11c5-40b8-909a-3dcbfa7ce113",
+        "319b0f94-1f8e-4059-a6dc-a1e4a52285a1",
+        "3ec603ad-cce2-4c7d-bc08-40a90b3935a9",
+        "1305abec-b7fd-419c-83ee-e269abf7daf7",
+        "ecdb4159-9238-4889-9afa-1646a9ee3b05"
+      ],
+      "settings": {
+        "heading": "Our Brands",
+        "caption": "",
+        "button_label": "",
+        "button_link": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ccaa105b-ee72-40f1-b2a7-3a6615b145b9": {
+      "type": "three-column-image",
+      "blocks": {
+        "4783ce95-1324-4396-a702-8ea8f76a31af": {
+          "type": "image",
+          "settings": {
+            "ig_image": "shopify:\/\/shop_images\/3-1.png",
+            "image_link": "#"
+          }
+        },
+        "6d9fc5f3-79d9-4e14-89c6-80e64ff6427f": {
+          "type": "image",
+          "settings": {
+            "ig_image": "shopify:\/\/shop_images\/3-2.png",
+            "image_link": "#"
+          }
+        },
+        "3b5cc4ac-99bb-4f4f-9a3c-54d1d64a2f67": {
+          "type": "image",
+          "settings": {
+            "ig_image": "shopify:\/\/shop_images\/3-3.png",
+            "image_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "4783ce95-1324-4396-a702-8ea8f76a31af",
+        "6d9fc5f3-79d9-4e14-89c6-80e64ff6427f",
+        "3b5cc4ac-99bb-4f4f-9a3c-54d1d64a2f67"
+      ],
+      "settings": {
+        "heading": "",
+        "sub_heading": "",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "0e983d99-de72-48e9-af62-4e681c691755": {
+      "type": "location-crousel",
+      "blocks": {
+        "a0872297-b841-4e49-acd6-d4401624843b": {
+          "type": "location",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/l-1.png",
+            "image_link": "shopify:\/\/pages\/markham-store",
+            "location": "Markham",
+            "address": "505 Cochrane Dr",
+            "city": "Markham",
+            "province": "ON",
+            "postal": "L3R 8E3",
+            "phone": "905-944-0090",
+            "email": "markham@treadmillfactory.ca",
+            "hours": "<p>Monday - Saturday: 10:00am - 6:00pm<br\/>Sunday - CLOSED<\/p>"
+          }
+        },
+        "00e71db4-70e7-4adf-b098-9c21ab07ba3e": {
+          "type": "location",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/l-1.png",
+            "image_link": "shopify:\/\/pages\/markham-store",
+            "location": "Markham",
+            "address": "505 Cochrane Dr",
+            "city": "Markham",
+            "province": "ON",
+            "postal": "L3R 8E3",
+            "phone": "905-944-0090",
+            "email": "markham@treadmillfactory.ca",
+            "hours": "<p>Monday - Saturday: 10:00am - 6:00pm<br\/>Sunday - CLOSED<\/p>"
+          }
+        },
+        "b88b77f5-514a-4ad5-a569-4d152a2dab76": {
+          "type": "location",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/l-1.png",
+            "image_link": "shopify:\/\/pages\/markham-store",
+            "location": "Markham",
+            "address": "505 Cochrane Dr",
+            "city": "Markham",
+            "province": "ON",
+            "postal": "L3R 8E3",
+            "phone": "905-944-0090",
+            "email": "markham@treadmillfactory.ca",
+            "hours": "<p>Monday - Saturday: 10:00am - 6:00pm<br\/>Sunday - CLOSED<\/p>"
+          }
+        },
+        "3f78aad1-df3c-45e3-aa00-95572e4d1c0d": {
+          "type": "location",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/l-1.png",
+            "image_link": "shopify:\/\/pages\/markham-store",
+            "location": "Markham",
+            "address": "505 Cochrane Dr",
+            "city": "Markham",
+            "province": "ON",
+            "postal": "L3R 8E3",
+            "phone": "905-944-0090",
+            "email": "markham@treadmillfactory.ca",
+            "hours": "<p>Monday - Saturday: 10:00am - 6:00pm<br\/>Sunday - CLOSED<\/p>"
+          }
+        },
+        "fbdcce54-d66f-454d-8987-74e8a6564b25": {
+          "type": "location",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/l-1.png",
+            "image_link": "shopify:\/\/pages\/markham-store",
+            "location": "Markham",
+            "address": "505 Cochrane Dr",
+            "city": "Markham",
+            "province": "ON",
+            "postal": "L3R 8E3",
+            "phone": "905-944-0090",
+            "email": "markham@treadmillfactory.ca",
+            "hours": "<p>Monday - Saturday: 10:00am - 6:00pm<br\/>Sunday - CLOSED<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a0872297-b841-4e49-acd6-d4401624843b",
+        "00e71db4-70e7-4adf-b098-9c21ab07ba3e",
+        "b88b77f5-514a-4ad5-a569-4d152a2dab76",
+        "3f78aad1-df3c-45e3-aa00-95572e4d1c0d",
+        "fbdcce54-d66f-454d-8987-74e8a6564b25"
+      ],
+      "settings": {
+        "heading": "Visit Our Stores",
+        "caption": "",
+        "button_label": "",
+        "button_link": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
     "3ad2cabf-9ded-47aa-aa59-205915e260cb",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "11735775-5187-48cd-8650-6bdb516123cf",
+    "f8df3d99-d04b-4507-98fc-ea497f20f6bf",
+    "4f83615f-63ef-41de-8532-1a7425a19de9",
+    "ccaa105b-ee72-40f1-b2a7-3a6615b145b9",
+    "0e983d99-de72-48e9-af62-4e681c691755"
   ]
 }

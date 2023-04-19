@@ -5,37 +5,53 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-0": {
+        "4f3c552d-3e6d-435c-8f2b-dd1788eb75de": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "Support & Service",
+            "menu": "support-service-menu"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "heading": "Orders & Deliveries",
+            "menu": "orders-deliveries-menu"
           }
         },
-        "footer-2": {
-          "type": "text",
+        "footer-0": {
+          "type": "link_list",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "Site Information Menu",
+            "menu": "site-information-menu"
+          }
+        },
+        "3f8e3c61-ae93-4884-8b00-3bd50d7cb574": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Locations",
+            "menu": "corporate-information-menu"
+          }
+        },
+        "31cd6d9f-3172-4148-b507-a0d9e2413a04": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
           }
         }
       },
       "block_order": [
-        "footer-0",
+        "4f3c552d-3e6d-435c-8f2b-dd1788eb75de",
         "footer-1",
-        "footer-2"
+        "footer-0",
+        "3f8e3c61-ae93-4884-8b00-3bd50d7cb574",
+        "31cd6d9f-3172-4148-b507-a0d9e2413a04"
       ],
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
