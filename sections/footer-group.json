@@ -12,18 +12,18 @@
             "menu": "support-service-menu"
           }
         },
-        "footer-1": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Orders & Deliveries",
-            "menu": "orders-deliveries-menu"
-          }
-        },
         "footer-0": {
           "type": "link_list",
           "settings": {
             "heading": "Site Information Menu",
             "menu": "site-information-menu"
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Orders & Deliveries",
+            "menu": "orders-deliveries-menu"
           }
         },
         "3f8e3c61-ae93-4884-8b00-3bd50d7cb574": {
@@ -42,8 +42,8 @@
       },
       "block_order": [
         "4f3c552d-3e6d-435c-8f2b-dd1788eb75de",
-        "footer-1",
         "footer-0",
+        "footer-1",
         "3f8e3c61-ae93-4884-8b00-3bd50d7cb574",
         "31cd6d9f-3172-4148-b507-a0d9e2413a04"
       ],

@@ -17,19 +17,38 @@
 
 .newsletter-form__field-wrapper .field__label {
   color: #999;
+  font-size: 1.2rem;
+  left: 10px;
+  top: 4px;
+  letter-spacing: 0px;
 }
 
 .newsletter-form__field-wrapper {
   width: 100%;
 }
 
+.newsletter-form__field-wrapper .newsletter-form__button {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  top: 1px;
+  height: 92%;
+}
+
 .newsletter-form__field-wrapper .field__input {
   padding-right: 5rem;
   background: #FFF;
+  height: unset;
+  padding: unset;
+  border-radius: 2px;
+  border:none;
 }
 
 .newsletter-form__field-wrapper .field {
   z-index: 0;
+}
+
+.newsletter-form__field-wrapper .field::after {
+  box-shadow: none;
 }
 
 .newsletter-form__message {
@@ -48,7 +67,7 @@
 }
 
 .newsletter-form__button {
-  width: 4.4rem;
+  width: 7rem;
   margin: 0;
   right: var(--inputs-border-width);
   top: 0;
@@ -68,7 +87,7 @@
 
 .newsletter-form__button:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
-  background-color: #FFF200;
+  background-color: #FFD500;
 }
 
 .newsletter-form__button .icon {

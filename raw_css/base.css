@@ -2390,7 +2390,11 @@ product-info .loading-overlay:not(.hidden) ~ *,
   grid-template-areas: 'left-icons heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
 }
+
+
 
 @media screen and (max-width: 749px) {
   .header--has-app {
@@ -2538,7 +2542,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 /* Header search */
 .header-search
-{  grid-area: search;}
+{  grid-area: search;padding-left: 50px;}
 /* Header contact */
 .header-info
 {  grid-area: contact;}
