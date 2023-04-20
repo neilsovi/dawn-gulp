@@ -173,8 +173,8 @@
         "padding_bottom": 0
       }
     },
-    "4f83615f-63ef-41de-8532-1a7425a19de9": {
-      "type": "image-carousel",
+    "bc3b7798-a44a-4b10-bf7e-f42ce4c9e7a6": {
+      "type": "icon-carousel",
       "blocks": {
         "adc9fd36-11c5-40b8-909a-3dcbfa7ce113": {
           "type": "image",
@@ -380,76 +380,6 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "bc3b7798-a44a-4b10-bf7e-f42ce4c9e7a6": {
-      "type": "icon-carousel",
-      "blocks": {
-        "adc9fd36-11c5-40b8-909a-3dcbfa7ce113": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/xm-wordmark-logo-2020_1_45c6fb95-7090-4691-868e-7dd33e1686ca.png",
-            "heading": "",
-            "caption": "",
-            "block_heading": "",
-            "image_link": ""
-          }
-        },
-        "319b0f94-1f8e-4059-a6dc-a1e4a52285a1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ironax-logo-online_271d84b9-7e24-445f-942a-2f4966aeb543.png",
-            "heading": "",
-            "caption": "",
-            "block_heading": "",
-            "image_link": ""
-          }
-        },
-        "3ec603ad-cce2-4c7d-bc08-40a90b3935a9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/elementfitness_Logo_40772b34-0bdc-4836-b8f4-47bc04235642.png",
-            "heading": "",
-            "caption": "",
-            "block_heading": "",
-            "image_link": ""
-          }
-        },
-        "1305abec-b7fd-419c-83ee-e269abf7daf7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trx_logo_fcb7f66d-49bb-4b0f-a428-e801a7a7555f.png",
-            "heading": "",
-            "caption": "",
-            "block_heading": "",
-            "image_link": ""
-          }
-        },
-        "ecdb4159-9238-4889-9afa-1646a9ee3b05": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Bodycraft_logo_New2014_1_-01_0c5aac21-7355-41a9-aa63-ad254788260b.png",
-            "heading": "",
-            "caption": "",
-            "block_heading": "",
-            "image_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "adc9fd36-11c5-40b8-909a-3dcbfa7ce113",
-        "319b0f94-1f8e-4059-a6dc-a1e4a52285a1",
-        "3ec603ad-cce2-4c7d-bc08-40a90b3935a9",
-        "1305abec-b7fd-419c-83ee-e269abf7daf7",
-        "ecdb4159-9238-4889-9afa-1646a9ee3b05"
-      ],
-      "settings": {
-        "heading": "Our Brands",
-        "caption": "",
-        "button_label": "",
-        "button_link": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
@@ -457,10 +387,9 @@
     "featured_collection",
     "11735775-5187-48cd-8650-6bdb516123cf",
     "f8df3d99-d04b-4507-98fc-ea497f20f6bf",
-    "4f83615f-63ef-41de-8532-1a7425a19de9",
+    "bc3b7798-a44a-4b10-bf7e-f42ce4c9e7a6",
     "ccaa105b-ee72-40f1-b2a7-3a6615b145b9",
     "0e983d99-de72-48e9-af62-4e681c691755",
-    "1681928564ac3f78e9",
-    "bc3b7798-a44a-4b10-bf7e-f42ce4c9e7a6"
+    "1681928564ac3f78e9"
   ]
 }

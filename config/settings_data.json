@@ -1,6 +1,6 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Fitness-Factory-Thumbnail.png",
+    "logo": "shopify:\/\/shop_images\/fitness-factory-logo-web-2021-144_766d6ff4-6e52-4e82-91a7-c6bc25d44404.png",
     "logo_width": 200,
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
@@ -110,9 +110,9 @@
     "brand_headline": "<strong>The Treadmill Factory,<\/strong> Fitness Equipment Superstores",
     "brand_description": "<p><strong>Call Us Toll Free:<\/strong> <a href=\"tel:18884693031\" title=\"tel:18884693031\">1.888.469.3031<\/a><br\/><strong>General Inquiries:<\/strong> Email: <a href=\"mailto:info@treadmillfactory.ca?subject=Directed%20From%20the%20TF%20Website%20Footer\" title=\"mailto:info@treadmillfactory.ca?subject=Directed%20From%20the%20TF%20Website%20Footer\">info@treadmillfactory.ca<\/a><br\/><strong>Media Inquiries:<\/strong> Email: <a href=\"mailto:media@treadmillfactory.ca?subject=Directed%20From%20the%20TF%20Website%20Footer\" title=\"mailto:media@treadmillfactory.ca?subject=Directed%20From%20the%20TF%20Website%20Footer\">media@treadmillfactory.ca<\/a><\/p>",
     "brand_image": "shopify:\/\/shop_images\/TF-FF-Simple-logo-2019.png",
-    "social_facebook_link": "",
-    "social_instagram_link": "",
-    "social_youtube_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/TreadmillFactory",
+    "social_instagram_link": "https:\/\/www.instagram.com\/tf_canada\/",
+    "social_youtube_link": "https:\/\/www.youtube.com\/treadmillfactorytv",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",

@@ -3546,9 +3546,10 @@ details-disclosure > details {
 }
 
 .img-caro .slick-list {padding-bottom:30px!important;}
-
+.img-caro__img:last-child {grid-column: span 2;
+  text-align: center;}
 .img-caro__img img{
-  width:100%;
+  max-width:100%;
 }
 
 .img-caro .slick-slide {
