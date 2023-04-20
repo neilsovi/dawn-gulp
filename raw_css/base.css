@@ -3555,9 +3555,16 @@ details-disclosure > details {
     margin: 0 10px;
 }
 
+.icon-caro-slick {
+  display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 @media screen and (min-width: 992px){
  .img-caro__caption{
    width: 60%;
+}
+.icon-caro-slick {
+  display: initial;
 }
 }
 
@@ -3579,6 +3586,7 @@ details-disclosure > details {
   align-items: center;
   gap:20px;
 }
+.collection__view-all {display: none;}
 .collection__view-all a{
   background-color: #ececec;
   color: #333;
@@ -3598,9 +3606,24 @@ details-disclosure > details {
 }
 
 .featured-collection slider-component {
+  width:100%;
   padding: 0;
 }
 
+.featured-collection slider-component .slick-initialized .slick-slide {
+  margin: 0 10px
+}
+
+featured-collection-slider {
+  width:100%;
+}
+
+@media (min-width: 992px) {
+.collection__view-all {display: block;}
+.featured-collection slider-component,
+featured-collection-slider {
+  width:unset;}
+}
 
 
 /* Three Column Icon Section*/
