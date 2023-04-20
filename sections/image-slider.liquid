@@ -90,6 +90,9 @@
          {% when 'slider' %}
          <div class="hero-img__wrapper--mobile" style="background: url({{ block.settings.mobileImage | image_url:width:340 }}) no-repeat; background-size: cover;">
             <div class="hero-img-wrapper">
+               <div class="brand-image">
+               <img src="{{ block.settings.brand-image | image_url:width:960 }}">
+               </div>
                <div class="hero-img-heading">
                   <h3>{{ block.settings.heading }}</h3>
                </div>
