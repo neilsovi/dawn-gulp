@@ -3551,6 +3551,21 @@ details-disclosure > details {
 .img-caro__img img{
   max-width:100%;
 }
+icon-carousel .img-caro__img a {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height:79px;
+}
+
+icon-carousel .img-caro__img img {
+  width:auto;
+  padding:40px;
+}
+
+icon-carousel .img-caro__img:last-child img {
+  width:50%;
+}
 
 .img-caro .slick-slide {
     margin: 0 10px;
@@ -3561,6 +3576,13 @@ details-disclosure > details {
     grid-template-columns: repeat(2,1fr);
 }
 @media screen and (min-width: 992px){
+  icon-carousel .img-caro__img img {
+    padding: 0;
+  }
+  
+  icon-carousel .img-caro__img img:last-child {
+    width:100%;
+  }
  .img-caro__caption{
    width: 60%;
 }

@@ -176,30 +176,10 @@
     "bc3b7798-a44a-4b10-bf7e-f42ce4c9e7a6": {
       "type": "icon-carousel",
       "blocks": {
-        "adc9fd36-11c5-40b8-909a-3dcbfa7ce113": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/xm-wordmark-logo-2020_1_45c6fb95-7090-4691-868e-7dd33e1686ca.png",
-            "heading": "",
-            "caption": "",
-            "block_heading": "",
-            "image_link": ""
-          }
-        },
-        "319b0f94-1f8e-4059-a6dc-a1e4a52285a1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ironax-logo-online_271d84b9-7e24-445f-942a-2f4966aeb543.png",
-            "heading": "",
-            "caption": "",
-            "block_heading": "",
-            "image_link": ""
-          }
-        },
         "3ec603ad-cce2-4c7d-bc08-40a90b3935a9": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/elementfitness_Logo_40772b34-0bdc-4836-b8f4-47bc04235642.png",
+            "image": "shopify:\/\/shop_images\/element-02_8541a794-c4bf-4268-86ed-ebb4c67eb812.png",
             "heading": "",
             "caption": "",
             "block_heading": "",
@@ -209,7 +189,7 @@
         "1305abec-b7fd-419c-83ee-e269abf7daf7": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/trx_logo_fcb7f66d-49bb-4b0f-a428-e801a7a7555f.png",
+            "image": "shopify:\/\/shop_images\/XM-02_91b9e2a4-e805-4dfd-8def-0b168f163bb6.png",
             "heading": "",
             "caption": "",
             "block_heading": "",
@@ -225,14 +205,34 @@
             "block_heading": "",
             "image_link": ""
           }
+        },
+        "adc9fd36-11c5-40b8-909a-3dcbfa7ce113": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/clmbr-02_f40c28f0-3dac-42e3-abb0-e9079861fd5b.png",
+            "heading": "",
+            "caption": "",
+            "block_heading": "",
+            "image_link": ""
+          }
+        },
+        "319b0f94-1f8e-4059-a6dc-a1e4a52285a1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/assault-02_4d235d1d-feab-48cd-9fcf-e63145dd475b.png",
+            "heading": "",
+            "caption": "",
+            "block_heading": "",
+            "image_link": ""
+          }
         }
       },
       "block_order": [
-        "adc9fd36-11c5-40b8-909a-3dcbfa7ce113",
-        "319b0f94-1f8e-4059-a6dc-a1e4a52285a1",
         "3ec603ad-cce2-4c7d-bc08-40a90b3935a9",
         "1305abec-b7fd-419c-83ee-e269abf7daf7",
-        "ecdb4159-9238-4889-9afa-1646a9ee3b05"
+        "ecdb4159-9238-4889-9afa-1646a9ee3b05",
+        "adc9fd36-11c5-40b8-909a-3dcbfa7ce113",
+        "319b0f94-1f8e-4059-a6dc-a1e4a52285a1"
       ],
       "settings": {
         "heading": "Our Brands",

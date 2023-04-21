@@ -27,7 +27,7 @@
       {% when 'image' %}
       <div class="img-caro__img">
          <a href="{{ block.settings.image_link }}">
-         <img src="{{ block.settings.image | image_url:width:310 }}" >
+         <img src="{{ block.settings.image | image_url:master }}" >
          <div class="text-wrapper">
             <div class="image-heading">{{ block.settings.heading }}</div>
             <div class="image-caption">{{ block.settings.caption}}</div>
